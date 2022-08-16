@@ -1,0 +1,32 @@
+ var x = 5;
+        var name = "Rob";
+
+        x = 20;
+
+        document.getElementById("bChangeText").onclick = function() {
+
+            var textEntered = "";
+
+            textEntered = document.getElementById("textInput").value;
+
+            document.getElementById("text").innerHTML = textEntered;
+
+        }
+
+	var magicWord = "";
+
+        var correctWord = "what";
+
+        document.getElementById("bLogin").onclick = function() {
+
+            magicWord = document.getElementById("magicWord").value;
+
+            if(magicWord == correctWord){
+
+                alert("Login Successful")
+
+            }else{
+                alert("Login failed");
+            }
+
+        }

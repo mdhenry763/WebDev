@@ -1,0 +1,19 @@
+var answer = Math.floor(Math.random() * 6);
+        alert(answer);
+        var guess = "";
+        
+        document.getElementById("bGuess").onclick = function() {
+
+            guess = document.getElementById("guess").value;
+
+            if(guess == answer){
+
+                alert("The guess " + guess + " is correct");
+    
+            }else{
+
+                alert("Wrong the answer is " + answer);
+
+            }
+
+        }

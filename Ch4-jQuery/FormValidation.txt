@@ -1,0 +1,110 @@
+<div id="container">
+
+        <div id="errorMessages"></div>
+
+        <div class="form-element">
+
+            <label for="Email">Email</label>
+            <input type="text" id="email" name="email" placeholder="email">
+
+
+        </div>
+
+        <div class="form-element">
+
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" name="phone" placeholder="eg. 0123456789">
+
+        </div>
+
+        <div class="form-element">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+
+        </div>
+
+        <div class="form-element">
+
+            <label for="passwordConfirm">Confirm Password</label>
+            <input type="password" id="passwordConfirm" name="passwordConfirm">
+
+        </div>
+
+        <div class="form-element">
+
+            <input type="submit" id="submitB" value="Sign Up">
+
+        </div>
+
+
+    </div>
+
+    <script type="text/javascript">
+
+        function isEmail(email) {
+            var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            return regex.test(email);
+        }
+
+        $("#submitB").click(function () {
+
+            var errorMessage = "";
+            var fieldsMissing = "";
+
+            if ($("#email").val() == "") {
+
+                fieldsMissing += "<br>Email";
+
+            }
+            if ($("#phone").val() == "") {
+
+                fieldsMissing += "<br>Phone";
+
+            }
+            if ($("#password").val() == "") {
+
+                fieldsMissing += "<br>password";
+
+            }
+            if ($("#passwordConfirm").val() == "") {
+
+                fieldsMissing += "<br>Confirm Password";
+
+            }
+
+            if (fieldsMissing != "") {
+
+                errorMessage += "<p> The following fields are missing!" + fieldsMissing + "</p>"
+
+            }
+
+            if (!isEmail($("#email").val())) {
+
+                errorMessage += "<p>Your email address is not valid</p>";
+
+            }
+
+            if (!$.isNumeric($("#phone").val())) {
+
+                errorMessage += "<p>Your phone number is not numeric!</p>";
+
+            }
+
+            if ($("#password").val() != $("#passwordConfirm").val()) {
+
+                errorMessage += "Your passwords don't match!"
+
+            }
+
+            if (errorMessage != "") {
+
+                $("#errorMessages").html(errorMessage);
+
+            } else {
+
+
+
+            };
+
+        });

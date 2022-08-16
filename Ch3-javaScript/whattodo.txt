@@ -1,0 +1,10 @@
+Js course:
+
+- switch statement (13)
+- conditional ternanry operator (10)
+- function declarations vs expressions (11)
+- arrow functions (10)
+- fucntions calling other functions (10)
+- object methods (23)
+- for loop (10)
+- looping arrays (22)

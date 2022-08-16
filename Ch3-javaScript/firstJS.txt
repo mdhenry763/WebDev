@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Javascript</title>
+
+</head>
+
+<body>
+
+    <p id="text">Hello World!</p>
+
+    <script type="text/javascript">
+
+        //This is a comment
+        /*
+        |----------------------------|
+        |This is a multi-line comment|
+        |----------------------------|
+        */
+
+        document.getElementById("text").innerHTML = "Hello Michael!";
+
+	document.getElementById("myButton").onclick = function() {
+
+            document.getElementById("text").innerHTML = "Hello Michael!";
+
+        } 
+
+	document.getElementById("styleText").onclick = function() {
+
+            document.getElementById("moreText").style.display = "none";
+
+        }
+
+    </script>
+
+</body>
+
+
+</html>

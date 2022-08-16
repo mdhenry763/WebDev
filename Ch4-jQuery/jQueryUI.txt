@@ -1,0 +1,31 @@
+$(function () {
+            $("#draggable").draggable({ axis: "x" });
+        });
+
+        $("span").draggable({ containment: "parent" });
+
+        $("#resizable").resizable({
+            alsoResize: "#also",
+            resize: function( event, ui ) {
+                if($("resizable").width() > 400){
+                    alert("Big Enough");
+                }
+            }
+        });
+
+        $("also").resizable();
+
+<script src="jquery-ui/jquery-ui.js"></script>
+____________________________________________________________________________
+
+
+$("#small").draggable();
+
+        $("#big").droppable({
+            drop: function( event, ui ) {
+                console.log(event);
+            }
+        });
+
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+

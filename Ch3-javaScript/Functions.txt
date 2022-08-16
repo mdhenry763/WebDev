@@ -1,0 +1,13 @@
+function average (a, b ){
+
+            return ((a + b) /2);
+
+       }
+
+       x = 5;
+
+       y = 10;
+
+       alert(average(x, y));
+
+

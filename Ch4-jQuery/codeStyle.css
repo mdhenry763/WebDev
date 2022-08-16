@@ -1,0 +1,90 @@
+
+body{
+
+    margin: 0;
+    padding: 0;
+
+}
+
+#top-bar{
+
+    height: 65px;
+    background-color: #EDEDED;
+    position: relative;
+    top: -22px;
+
+}
+
+#top-bar h1{
+
+    margin-left: 5px;
+    position: relative;
+    top: 10px;
+    float: left;
+
+}
+
+.option{
+
+    float: left;
+    position: relative;
+    top: 35px;
+    left: 35%;
+}
+
+.option button{
+
+    font-size: 16px;
+    color: black;
+
+}
+
+
+.active button{
+
+    background-color: rgb(211, 243, 232);
+
+}
+
+.highlight button{
+
+    background-color: grey;
+
+
+}
+
+.clear{
+
+    clear: both;
+
+}
+
+textarea {
+
+    resize: none;
+    border-top: none;
+    border-color: grey;
+
+}
+
+.panel{
+
+    float: left;
+    width: 50%;
+
+}
+
+iframe{
+
+    border: none;
+
+}
+
+.hidden{
+
+    display: none;
+
+}
+
+
+

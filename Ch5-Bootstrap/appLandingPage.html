@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>My App</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <style type="text/css">
+        #jbContents {
+
+            position: relative;
+
+        }
+
+        #text {
+
+            position: absolute;
+
+        }
+
+        .jumbotron {
+
+            background-image: url("images/sky.jpg");
+            background-size: cover;
+            height: 500px;
+
+        }
+
+        #about {
+
+            margin-top: 20px;
+
+        }
+
+        #cards {
+
+            position: relative;
+            left: 70px;
+            margin-top: 50px;
+
+        }
+
+        .icon {
+
+            height: 30px;
+            width: 30px;
+            float: left;
+            padding: 5px;
+
+        }
+
+        #appStore {
+
+            width: 300px;
+            height: 100px;
+
+        }
+
+        #download {
+
+            height: 800px;
+            background-color: rgb(3, 243, 243);
+            padding-top: 200px;
+
+        }
+
+        #home {
+
+            padding-top: 100px;
+            margin-top: 50px;
+
+        }
+
+        body {
+
+            position: relative;
+
+        }
+    </style>
+
+</head>
+
+<body data-spy="scroll" data-target="#header" data-offset="150">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="header">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">MyApp</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#download">Download The App</a>
+                    </li>
+                </ul>
+                <form class="row row-cols-lg-auto g-0 align-items-center">
+                    <div class="col-sm-10 gx-2">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+
+                    </div>
+                    <div class="col-sm-10 gx-2">
+                        <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-success">Sign in</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="container-fluid bg-light p-5 jumbotron">
+        <div class="text-center" id="home">
+            <h1 class="display-4">My awesome App!</h1>
+            <p class="lead">This is why YOU should download this fantastic app!</p>
+            <hr class="my-4">
+            <p>Want to know more? Join our mailing list!</p>
+            <div class="col-10" style="position: relative; left: 550px;">
+                <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
+                <div class="input-group w-25">
+                    <div class="input-group-text">@</div>
+                    <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
+
+                    <button type="submit" class="btn btn-primary">Sign Up</button>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="text-center" id="about">
+
+        <h1>Why This App Is Awesome</h1>
+        <p>Summary, once again, of our app's awesomeness</p>
+
+    </div>
+
+    <div class="row" id="cards">
+
+        <div class="col-sm-4">
+            <div class="card" style="width: 30rem;">
+                <img src="images/office.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <img src="images/weight.png" class="icon">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <div class="card" style="width: 30rem;">
+                <img src="images/office.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <img src="images/running.png" class="icon">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <div class="card" style="width: 30rem;">
+                <img src="images/office.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <img src="images/soccerball.png" class="icon">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="download" class="text-center">
+
+        <h1>Download the app!</h1>
+        <p>Really why should I download this app??</p>
+        <img src="images/available.png" href="#" id="appStore">
+
+    </div>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"
+        integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7"
+        crossorigin="anonymous"></script>
+
+</body>
+
+
+</html>

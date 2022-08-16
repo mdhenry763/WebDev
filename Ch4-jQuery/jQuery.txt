@@ -1,0 +1,103 @@
+if(typeof jQuery == "undefined"){
+
+                alert("jQuery is not installed");
+
+            }else{
+
+                alert("jQuery is installed correctly!");
+
+            }
+
+$(".squares").click(function() {
+
+                alert("square was clicked");
+
+            })  
+
+
+$("#circle").hover(function() {
+
+                $("iframe").attr("src", "https://ecowebhosting.co.uk")
+
+            })  
+
+$("div").click(function(){
+
+                //this is the element that has been clicked
+                $(this).css("display","none");
+                alert("You clicked on a" + $(this).attr("id"));
+
+            });
+
+
+__________________________________________________________________________________
+
+
+$("#toggle").click(function() {
+                
+                if (textShowing) {
+                    
+                    $("#text").fadeOut(function() {
+                        
+                        textShowing = false;
+                        
+                    });
+                    
+                } else {
+                
+                    $("#text").fadeIn(function() {
+                        
+                        textShowing = true;
+                        
+                    });
+
+
+****************************************************************************************
+Animation
+****************************************************************************************
+
+$("#circle").click(function () {
+
+            $(this).animate({
+                width: "400px",
+                height: "400px",
+                marginLeft: "100px",
+                marginTop: "100px"
+            }, 2000, function(){
+
+                $(this).css("background-color", "red");
+
+            });
+
+        });
+****************************************************************************************
+Ajax use liveServer
+****************************************************************************************
+// $.get("info.txt", function(data){
+
+        //     alert(data);
+
+        // });
+
+        $.ajax("info.txt")
+            .done(function(data){
+
+            $("#we").html(data);
+
+        }).fail(function(){
+
+            alert("Could not load file");
+
+        });
+
+***********************************************************************************************
+Regex
+************************************************************************************************
+
+var regex = /e/g;
+
+        var string = "Regex is great!";
+
+        var result = string.match(regex);
+
+        alert(result);

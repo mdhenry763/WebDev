@@ -1,0 +1,17 @@
+<form>
+            <p>Username:<input type="" placeholder="Username"></p>
+            <p>Stay logged in: <input type="checkbox" checked></p> 
+            <p>Below 18:<input type="radio" name="age"></p>
+            <p>ABove 18:<input type="radio" name="age"></p>
+
+            <p>Favourite Food</p>
+            <select>
+                <option>Pizza</option>
+                <option selected>Ice cream</option>
+                <option>Watermelon</option>
+            </select>
+            <p>
+            
+                <p><input type="submit" value="Click me"></p>
+
+        </form>

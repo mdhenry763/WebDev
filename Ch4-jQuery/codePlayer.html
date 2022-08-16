@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Code Player</title>
+
+    <link rel="stylesheet" type="text/css" href="codeStyle.css">
+
+    <script src="jquery-ui/jquery-ui.js"></script>
+
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+
+    <script type="text/javascript" src="jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id="top-bar">
+        <h1>CodePlayer</h1>
+        <div id="options">
+            <div class="option">
+                <button id="htmlB">HTML</button>
+            </div>
+            <div class="option"><button id="cssB">CSS</button></div>
+            <div class="option"><button id="javaScriptB">Javascript</button></div>
+            <div class="option"><button id="outputB">Output</button></div>
+
+        </div>
+    </div>
+    <div class="clear"></div>
+
+    <div id="codingBoxHTML" class="codingBox">
+        <input type="text" id="htmlInput" value="<p>Hello World</p>">
+    </div>
+    <div id="codingBoxCSS" class="codingBox">
+        <input type="text" id="cssInput" value="p {color: green;}">
+    </div>
+    <div id="codingBoxJS" class="codingBox" value="">
+        <input type="text" id="jsInput" value="document.getElementById(&quot;paragraph&quot;).innerHTML = &quot;Hello Rob&quot;;">
+    </div>
+    <div id="codingBoxOutput" class="codingBox"></div>
+
+
+    <script type="text/javascript">
+
+        function codingBlockShow(button, codingBox) {
+
+
+
+            $(button).click(function () {
+
+                var clicked = 0;
+                
+
+                if ($(codingBox).css("display") == "none") {
+                    $(codingBox).css("display", "inline-block");
+                    $(button).css("backgroundColor", "#00FFFF");
+                    switch (button) {
+
+                        case "#htmlB":
+                            clicked++;
+                            break;
+                        case "#cssB":
+                            clicked++;
+                            break;
+                        case "#javaScriptB":
+                            clicked++;
+                            break;
+                        case "#outputB":
+                            clicked++;
+                            break;
+
+                    }
+
+                } else {
+                    $(codingBox).css("display", "none");
+                    $(button).css("backgroundColor", "#F5F9FF");
+                    switch (button) {
+
+                        case "#htmlB":
+                            clicked--;
+                            break;
+                        case "#cssB":
+                            clicked--;
+                            break;
+                        case "#javaScriptB":
+                            clicked--;
+                            break;
+                        case "#outputB":
+                            clicked--;
+                            break;
+
+                    }
+                }
+
+                /*if(clicked == 1 || clicked == 2 || clicked == 0){
+
+                    $(".codingBox").css("width",  "50%");
+
+                }else if(clicked == 3){
+
+                    $(".codingBox").css("width",  "33%");
+
+                }else if(clicked == 4){
+
+                    $(".codingBox").css("width",  "25%");
+
+                }*/
+                    
+
+                
+            });
+
+        }
+
+        codingBlockShow("#htmlB", "#codingBoxHTML");
+        codingBlockShow("#cssB", "#codingBoxCSS");
+        codingBlockShow("#javaScriptB", "#codingBoxJS");
+        codingBlockShow("#outputB", "#codingBoxOutput");
+
+        var output = $("#htmlInput").val();
+        var style = $("#cssInput").val();
+        var functioning = $("#jsInput").val();
+        $("#codingBoxOutput").html(output);
+        var start = style.indexOf("{");
+        var middle = style.indexOf(":");
+        var end = style.indexOf("}");
+        var cssEdit = style.slice(start + 1, middle).toString();
+        var cssChange = style.slice(middle + 1, end - 1).toString();
+        console.log(cssEdit);
+        console.log(cssChange);
+        $("#codingBoxOutput").css(cssEdit,cssChange);
+        eval($("#jsInput").val());
+        
+
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

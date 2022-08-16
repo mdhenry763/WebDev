@@ -1,0 +1,20 @@
+/***************************
+For phone application 770px
+****************************/
+
+@media (max-width : 48em){
+
+#about-me{
+
+    margin-bottom: 40rem;
+
+}
+
+#contact-details{
+
+    position: relative;
+    left: 10%;
+
+}
+
+}

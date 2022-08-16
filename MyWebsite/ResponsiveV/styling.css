@@ -1,0 +1,162 @@
+
+body{
+
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-size: 1rem;
+
+}
+
+
+#contact-details{
+
+    margin-top: 3.125rem;
+    padding-left: 0.3rem;
+    position: relative;
+    left: 40%;
+
+}
+
+#contact-details ul{
+
+    list-style: none;
+
+}
+
+#contact-details li{
+
+    padding: 0.1rem;
+
+}
+
+#navbar{
+
+    display: block;
+
+}
+
+.clear{
+
+    clear: both;
+
+}
+
+
+#about-me{
+
+    height: 37.5rem;
+    margin-top: 7rem;
+}
+
+
+.headings{
+
+    text-align: center;
+    padding: 0.1rem; 
+
+}
+
+#about-me-text{
+
+    margin-top: 20px;
+    font-size: 18px;
+    width: 500px;
+
+}
+
+#about-me-card{
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+
+}
+
+#uni-subjects{
+
+    list-style: none;
+
+}
+
+#accordionEd{
+
+    margin-top: 40px;
+
+}
+
+#education{
+
+    margin-top: 7rem; 
+
+}
+
+#experience{
+
+    margin-top: 7rem;
+
+}
+
+#education img{
+
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+
+}
+
+#experience-list{
+
+    margin-top: 30px;
+
+}
+
+.c-images{
+
+    height: 400px;
+
+}
+
+#skills{
+
+    margin-top: 7rem;
+}
+
+#skills-list{
+
+    margin-top: 1.5rem;
+
+}
+
+#goals{
+
+    margin-top: 7rem;
+}
+
+#footer{
+
+    height: 1000px;
+    background-color: rgb(20, 20, 20);
+
+}
+
+#footer-text{
+
+    padding-top: 100px;
+    color: white;
+
+}
+
+#footer a{
+
+    text-decoration: none;
+    color: white;
+
+}
+
+#footer a:hover{
+
+    color: rgb(189, 189, 189);
+
+}
+
